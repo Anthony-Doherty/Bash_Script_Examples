@@ -8,32 +8,17 @@
 #$ -l h_vmem=24G
 #$ -t 1
 
-#Works really well. 
-
 # Aim: Run the MSPC software for multiple prefixes automatically.
 
 # Load required Modules
 . /etc/profile.d/modules.sh
 module load igmm/apps/mspc/6.0.0
 
-# # Define an array of prefixes
-# PREFIXES=(
-#   "dCBP_FP"
-#   "dCBP_P300_AM"
-#   "dCBP_P300_CST"
-#   "dCBP_CBP"
-#   "dCBP_H3K27Ac"
-#   "dCBP_H2BK20Ac"
-# )
-
 # Define an array of prefixes
 PREFIXES=(
-"ACBI1_P300"
-"ACBI1_SMARCA4"
-"ACBI1_SS18SSX"
-"DMS0_P300"
-"DMS0_SMARCA4"
-"DMS0_SS18SSX"
+"P300"
+"SMARCA4"
+"SS18SSX"
 )
 
 # Define the input directory and output directory
